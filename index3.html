@@ -1,0 +1,180 @@
+<html lang="zh-Hant">
+
+<head>
+<title>表格試做</title>
+<link rel="icon" type="image/x-icon" href="favicon-32.ico">
+
+<style>
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* 讓表格均勻壓縮，避免水平捲動 */
+}
+
+/* 自動換行設定 */
+table, th, td {
+  border: 1px solid black;
+  word-wrap: break-word;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+/* 表頭固定 */
+th {
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  z-index: 2;
+  padding: 4px;
+}
+
+/* 優化輸入框 */
+td input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* 讓整個表格可以水平縮放（但不會出現內容溢出） */
+.table-container {
+  width: 100%;
+  resize: horizontal;
+  overflow: auto;
+  border: 1px solid #ccc;
+  padding: 0;
+}
+
+/* 讓欄位寬度依比例分配（可調整） */
+colgroup col.small {
+  width: 5%;
+}
+colgroup col.medium {
+  width: 10%;
+}
+colgroup col.large {
+  width: 15%;
+}
+colgroup col.xlarge {
+  width: 20%;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1 style="font-family:微軟正黑體;color:violet;font-size:48px;text-align:center;">
+虛驚事件管理系統
+</h1>
+
+<div class="table-container">
+
+<table>
+
+  <!-- 欄位寬度比例配置 -->
+  <colgroup>
+    <col class="small">
+    <col class="small">
+    <col class="small">
+    <col class="medium">
+    <col class="small">
+    <col class="small">
+    <col class="medium">
+    <col class="xlarge">
+    <col class="medium">
+    <col class="xlarge">
+    <col class="xlarge">
+    <col class="small">
+    <col class="medium">
+    <col class="xlarge">
+    <col class="large">
+    <col class="medium">
+    <col class="medium">
+    <col class="medium">
+    <col class="xlarge">
+    <col class="medium">
+    <col class="medium">
+    <col class="xlarge">
+    <col class="medium">
+    <col class="medium">
+    <col class="medium">
+    <col class="small">
+    <col class="small">
+  </colgroup>
+
+  <tr>
+    <th>ID</th>
+    <th>報告日期</th>
+    <th>發現者</th>
+    <th>窗口管理人員</th>
+    <th>發現日期</th>
+    <th>發現時間</th>
+    <th>發現地點</th>
+    <th>虛驚事件描述</th>
+    <th>涉及範疇</th>
+    <th>可能導致後果</th>
+    <th>臨時控制措施</th>
+    <th>被舉報者</th>
+    <th>權責單位主管</th>
+    <th>調查內容</th>
+    <th>佐證資料</th>
+    <th>風險評估</th>
+    <th>調查人員/調查小組</th>
+    <th>食安/職安負責人員</th>
+    <th>改善/預防措施建議</th>
+    <th>責任人</th>
+    <th>權責單位主管</th>
+    <th>後續追蹤/結案紀錄</th>
+    <th>追蹤人</th>
+    <th>食安/職安負責人員</th>
+    <th>簽核主管</th>
+    <th>編輯</th>
+    <th>列印</th>
+  </tr>
+
+  <tr>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+  </tr>
+
+</table>
+
+</div>
+
+<br><br><br>
+
+<address>
+Written by Kasumi Tsai<br>
+<a href="mailto:kasumitsai@pack.com.tw">E-mail:kasumitsai@pack.com.tw</a><br>
+TEL：05-551-8017#126<br>
+品高企業 總務部 文管中心<br>
+雲林縣斗六市中南路290巷10-2號
+</address>
+
+</body>
+</html>
